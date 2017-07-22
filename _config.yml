@@ -1,0 +1,72 @@
+typography_spectrum: 0.0019407198570742465
+color:
+  brandColors:
+    - '#2C3E50'
+    - '#E74C3C'
+    - '#ECF0F1'
+    - '#3498DB'
+    - '#2980B9'
+  brandStrength: 0.8606827453109851
+  lightness: 0.48618628293303495
+  saturation: 0.3077713716678358
+  rhythmicContrast: 0.7759874537032061
+layout_spectrum: 0.5945496240479521
+name: Kosner Burstein
+colors:
+  brandColors:
+    - 'hsl(0,0%,100%)'
+    - 'hsl(0,0%,80%)'
+    - 'hsl(0,0%,60%)'
+    - 'hsl(0,0%,30%)'
+    - 'hsl(0,0%,20%)'
+navigation:
+  - name: New & Polished!
+    id: 4cb229a8-2e42-4618-b10f-15c342486538
+    type: content
+  - name: High Holy Days
+    id: fa4f050f-f2a8-45b5-b31c-56ab2341f4e0
+    type: content
+  - name: The Designer...
+    id: 0966385e-f142-4409-a59c-368f26bc5eaa
+    type: content
+title: Kosner Burstein
+content:
+  - id: !<tag:yaml.org,2002:js/undefined> ''
+    type: image
+    html: >-
+      <img
+      src="https://the-grid-user-content.s3-us-west-2.amazonaws.com/606f7680-064a-48f2-954e-372a634a3dcf.jpg">
+    src: >-
+      https://the-grid-user-content.s3-us-west-2.amazonaws.com/606f7680-064a-48f2-954e-372a634a3dcf.jpg
+    metadata:
+      datePublished: null
+      keywords: []
+      related: []
+      author: []
+      '@context': 'http://schema.org'
+      '@type': MediaObject
+      app_links: []
+      publisher:
+        url: 'https://the-grid-user-content.s3-us-west-2.amazonaws.com'
+        name: The-grid-user-content
+        favicon: null
+        domain: the-grid-user-content.s3-us-west-2.amazonaws.com
+      description: ''
+    title: !<tag:yaml.org,2002:js/undefined> ''
+    caption: !<tag:yaml.org,2002:js/undefined> ''
+    text: !<tag:yaml.org,2002:js/undefined> ''
+coverPrefs:
+  filter: false
+description: The official Kosner Burstein website.
+purpose:
+  - type: external
+    url: 'http://Luke.kosnerburstein.com'
+    label: Luke
+  - type: external
+    url: 'http://Diane.kosnerburstein.com'
+    label: Diane
+favicon: >-
+  https://the-grid-user-content.s3-us-west-2.amazonaws.com/8e4cd989-3943-4013-a018-59c8b62841db.jpg
+logo: >-
+  https://the-grid-user-content.s3-us-west-2.amazonaws.com/cbfd41ff-f845-4369-a4fe-a65af24447b3.png
+github: true
