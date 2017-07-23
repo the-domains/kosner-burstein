@@ -4,9 +4,9 @@
         <description><![CDATA[Kosner Burstein]]></description>
         <link>http://kosnerburstein.com/</link>
         <generator>The Grid</generator>
-        <lastBuildDate>Sun, 23 Jul 2017 12:38:36 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 23 Jul 2017 15:12:58 GMT</lastBuildDate>
         <atom:link href="http://kosnerburstein.com/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sun, 23 Jul 2017 12:38:35 GMT</pubDate>
+        <pubDate>Sun, 23 Jul 2017 15:12:57 GMT</pubDate>
         <item>
             <title><![CDATA[Ballas]]></title>
             <description><![CDATA[<h1>Ballas</h1>,<p>the official kosner entry to the 2026league</p>,<p>content about the ballas will be posted.</p>]]></description>
@@ -34,6 +34,83 @@
             <link>http://kosnerburstein.com/welcome-to-the-new-kosner-burstein-website/index.html</link>
             <guid isPermaLink="false">4cb229a8-2e42-4618-b10f-15c342486538</guid>
             <pubDate>Sun, 09 Jul 2017 20:04:39 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[No title]]></title>
+            <description><![CDATA[<pre><code>flask
+requests
+auth0-python
+/public/app.js
+
+$(document).ready(function() {
+  var auth = new auth0.WebAuth({
+    domain: &apos;kbfamily.auth0.com&apos;,
+    clientID: &apos;YGz8NIEjdVt9gp1I45zzufAGSDl7DbP1&apos;
+   });
+
+
+    $(&apos;.btn-login&apos;).click(function(e) {
+      e.preventDefault();
+      auth.authorize({
+        audience: &apos;https://&apos; + &apos;kbfamily.auth0.com&apos; + &apos;/userinfo&apos;,
+        scope: &apos;openid profile&apos;,
+        responseType: &apos;code&apos;,
+        redirectUri: &apos;www.kosnerburstein.com&apos;
+      });
+    });
+});  
+# server.py
+
+import os
+import json
+
+from auth0.v3.authentication import GetToken
+from auth0.v3.authentication import Users
+from dotenv import load_dotenv
+from flask import Flask
+from flask import redirect
+from flask import render_template
+from flask import request
+from flask import send_from_directory
+from flask import session
+
+# Here we&apos;re using the /callback route.
+@app.route(&apos;/callback&apos;)
+def callback_handling():
+    code = request.args.get(&apos;code&apos;)
+    get_token = GetToken(&apos;kbfamily.auth0.com&apos;)
+    auth0_users = Users(&apos;kbfamily.auth0.com&apos;)
+    token = get_token.authorization_code(&apos;YGz8NIEjdVt9gp1I45zzufAGSDl7DbP1&apos;,
+                                         &apos;4hEgEWUj6DMs2zEi6JSiy56Mo3NQsQ0LzsgyQq3kekpkzkgNq4CLxmFrwgsHBLoy&apos;, code, &apos;www.kosnerburstein.com&apos;)
+    user_info = auth0_users.userinfo(token[&apos;access_token&apos;])
+    session[&apos;profile&apos;] = json.loads(user_info)
+    return redirect(&apos;/dashboard&apos;)
+@app.route(&quot;/dashboard&quot;)
+@requires_auth
+def dashboard():
+    return render_template(&apos;dashboard.html&apos;, user=session[&apos;profile&apos;])
+&lt;div&gt;
+  &lt;img class=&quot;avatar&quot; src=&quot;{{user[&apos;picture&apos;]}}&quot;/&gt;
+  &lt;h2&gt;Welcome {{user[&apos;nickname&apos;]}}&lt;/h2&gt;
+&lt;/div&gt;
+@app.route(&apos;/logout&apos;)
+def logout():
+    session.clear()
+    parsed_base_url = urlparse(&apos;www.kosnerburstein.com&apos;)
+    base_url = parsed_base_url.scheme + &apos;://&apos; + parsed_base_url.netloc
+    return redirect(&apos;https://%s/v2/logout?returnTo=%s&amp;client_id=%s&apos; % (&apos;kbfamily.auth0.com&apos;, base_url, &apos;YGz8NIEjdVt9gp1I45zzufAGSDl7DbP1&apos;))
+def requires_auth(f):
+  @wraps(f)
+  def decorated(*args, **kwargs):
+    if &apos;profile&apos; not in session:
+      # Redirect to Login page here
+      return redirect(&apos;/&apos;)
+    return f(*args, **kwargs)
+
+  return decorated</code></pre>]]></description>
+            <link>https://the-grid.github.io/ed-userhtml/?g=eJyNVG1v2zYQ_q5fcTUCSAZqKV2TrHMcBdmcdd6cNJnnBUVbpBR1lhhRokJSceWh_e0lxchL0G7IB0nE3T0P7-U5UVHWQqEEibcNkwik0flu1L1HdV6PB1_2w92B1yiEE2t8v5j-8b47HXreThcHR1Dh2rmDdx6An4qSsMqHoxj8IlmRkvE27GJDKkr_uY2hnGGlr1nqwt6-3rw6n53epH_rn7L6xWxvf7NpVievF1P-4zS5ePEIpJBK1A64l59mp1fLm4Ppmfphc8oOfl-wdv_gTLw8v1SXu_ONytrL25cFFnWxKbLz271f5p_KX-U6U7_9PBetI5aYmuqpvm4kc7y51rUaR9HbN8s_r08uLiJKOE8ILRyANKlJheLj4G-LjUznJKtWwsFqlIopW_a1FgW6HmnZ4CMvoRSV-r8IiSuJKv8m5MPw0Isi6HMNzQg9LwxDb8fmMTN5mGm5sY3iDPXSWAOD8dgKgmfboCH8Y24DMFRXCDm5Q6gEWC_YWnpf3zXQAuYiY5X3GZAbqWzRyw6iOlmZyTFKNKa9c0FayJFzYfHbu9_5FSnR_9BH1aZ9GrjIRKMhabQW5hpv8mw0Mrmk-MnWCKNR7HkTApQTpY4Gia7APCODLYlsuzPP3Mfm2Z0SLmgxiBcsq2bVJCKx7VzdJJzRiNR1eKOMwoNU0KY0qQ9DiSRtg1VTUc1EFbge3REJa0ys-O_3wI3-ytkC1wm3EOP_3AYAp-zZdPzEVYBt85eSGdB6vQ4LoSqUSSOVRlY9IO_FOoaPT1Dqx55f1aJS-FdbG6BPRYr3dIqKzmTeFUvNgMSKcfSN77OVEsBO4IfbXvvD0BRHi387h728MKwl3pm6p7giDddWidZ-39AuNyHZBp3Dsttncmxl_QRVH8feJNcljw14koi07fWRixIHcXfXJGV3cccISPPv6BCO40lkgyxJZFkMa-RodziRZjn4Qgvz73TzP2vnD4w2je_8JomUpA16idtS7NFXFtKt8yPm5w8Dh8PDrzbvykA</link>
+            <guid isPermaLink="false">e8c882f5-87e3-46d7-a343-58ad57f000c3</guid>
+            <pubDate>Sun, 23 Jul 2017 13:20:46 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[No title]]></title>
