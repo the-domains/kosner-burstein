@@ -1,7 +1,7 @@
 ---
 publisher: {}
-datePublished: '2017-07-27T21:38:47.399Z'
-dateModified: '2017-07-27T21:38:46.952Z'
+datePublished: '2017-07-27T21:41:20.559Z'
+dateModified: '2017-07-27T21:41:20.298Z'
 via: {}
 description: You will later be notified about any details…
 title: 'The High Holy Days are coming up! '
