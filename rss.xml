@@ -4,9 +4,9 @@
         <description><![CDATA[Kosner Burstein]]></description>
         <link>http://kosnerburstein.com/</link>
         <generator>The Grid</generator>
-        <lastBuildDate>Thu, 27 Jul 2017 21:39:01 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 27 Jul 2017 21:41:29 GMT</lastBuildDate>
         <atom:link href="http://kosnerburstein.com/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Thu, 27 Jul 2017 21:38:50 GMT</pubDate>
+        <pubDate>Thu, 27 Jul 2017 21:41:23 GMT</pubDate>
         <item>
             <title><![CDATA[Ballas]]></title>
             <description><![CDATA[<h1>Ballas</h1>,<p>the official kosner entry to the 2026league</p>,<p>content about the ballas will be posted.</p>]]></description>
@@ -29,18 +29,18 @@
             <pubDate>Sun, 09 Jul 2017 20:04:39 GMT</pubDate>
         </item>
         <item>
-            <title><![CDATA[No title]]></title>
-            <description><![CDATA[<iframe src="https://the-grid.github.io/ed-userhtml/?g=eJwtjDEKwzAMRa8ivBaivTgeunbsCWxXISaOLSQF2tvXDVk-n8fjeQ4-wiq0zG414zviQvTW6b_pkEYy5b7j1nXcAdSotNNxIFRnF6uRtGjkwL5MAzDXkqOV3lBUb5-9uvA6kmYpicA6PM8YPK6axxg8cvgB69kyfA" height="244"></iframe>]]></description>
-            <link>https://the-grid.github.io/ed-userhtml/?g=eJwtjDEKwzAMRa8ivBaivTgeunbsCWxXISaOLSQF2tvXDVk-n8fjeQ4-wiq0zG414zviQvTW6b_pkEYy5b7j1nXcAdSotNNxIFRnF6uRtGjkwL5MAzDXkqOV3lBUb5-9uvA6kmYpicA6PM8YPK6axxg8cvgB69kyfA</link>
-            <guid isPermaLink="false">1dacbf9d-fe02-4573-b048-9fa01bf4575e</guid>
-            <pubDate>Sat, 22 Jul 2017 14:09:41 GMT</pubDate>
-        </item>
-        <item>
             <title><![CDATA[The High Holy Days are coming up! ]]></title>
             <description><![CDATA[<h1>The High Holy Days are coming up! </h1>,<p>You will later be notified about any details…</p>]]></description>
             <link>http://kosnerburstein.com/the-high-holy-days-are-coming-up/index.html</link>
             <guid isPermaLink="false">fa4f050f-f2a8-45b5-b31c-56ab2341f4e0</guid>
             <pubDate>Sun, 09 Jul 2017 20:42:07 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[No title]]></title>
+            <description><![CDATA[<iframe src="https://the-grid.github.io/ed-userhtml/?g=eJwtjDEKwzAMRa8ivBaivTgeunbsCWxXISaOLSQF2tvXDVk-n8fjeQ4-wiq0zG414zviQvTW6b_pkEYy5b7j1nXcAdSotNNxIFRnF6uRtGjkwL5MAzDXkqOV3lBUb5-9uvA6kmYpicA6PM8YPK6axxg8cvgB69kyfA" height="244"></iframe>]]></description>
+            <link>https://the-grid.github.io/ed-userhtml/?g=eJwtjDEKwzAMRa8ivBaivTgeunbsCWxXISaOLSQF2tvXDVk-n8fjeQ4-wiq0zG414zviQvTW6b_pkEYy5b7j1nXcAdSotNNxIFRnF6uRtGjkwL5MAzDXkqOV3lBUb5-9uvA6kmYpicA6PM8YPK6axxg8cvgB69kyfA</link>
+            <guid isPermaLink="false">1dacbf9d-fe02-4573-b048-9fa01bf4575e</guid>
+            <pubDate>Sat, 22 Jul 2017 14:09:41 GMT</pubDate>
         </item>
     </channel>
 </rss>
