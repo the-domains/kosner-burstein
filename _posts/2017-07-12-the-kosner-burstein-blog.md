@@ -1,7 +1,7 @@
 ---
 publisher: {}
-datePublished: '2017-07-27T21:38:47.346Z'
-dateModified: '2017-07-27T21:38:46.952Z'
+datePublished: '2017-07-27T21:41:20.607Z'
+dateModified: '2017-07-27T21:41:20.298Z'
 via: {}
 description: blog.kosnerburstein.com
 title: The Kosner Burstein Blog
