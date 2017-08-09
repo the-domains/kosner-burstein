@@ -70,3 +70,5 @@ favicon: >-
 logo: >-
   https://the-grid-user-content.s3-us-west-2.amazonaws.com/cbfd41ff-f845-4369-a4fe-a65af24447b3.png
 github: true
+analytics:
+  google: UA-104323546-1
