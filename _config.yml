@@ -30,31 +30,7 @@ navigation:
     id: 0966385e-f142-4409-a59c-368f26bc5eaa
     type: content
 title: Kosner Burstein
-content:
-  - id: !<tag:yaml.org,2002:js/undefined> ''
-    type: image
-    html: >-
-      <img
-      src="https://the-grid-user-content.s3-us-west-2.amazonaws.com/606f7680-064a-48f2-954e-372a634a3dcf.jpg">
-    src: >-
-      https://the-grid-user-content.s3-us-west-2.amazonaws.com/606f7680-064a-48f2-954e-372a634a3dcf.jpg
-    metadata:
-      datePublished: null
-      keywords: []
-      related: []
-      author: []
-      '@context': 'http://schema.org'
-      '@type': MediaObject
-      app_links: []
-      publisher:
-        url: 'https://the-grid-user-content.s3-us-west-2.amazonaws.com'
-        name: The-grid-user-content
-        favicon: null
-        domain: the-grid-user-content.s3-us-west-2.amazonaws.com
-      description: ''
-    title: !<tag:yaml.org,2002:js/undefined> ''
-    caption: !<tag:yaml.org,2002:js/undefined> ''
-    text: !<tag:yaml.org,2002:js/undefined> ''
+content: []
 coverPrefs:
   filter: false
 description: The official Kosner Burstein website.
