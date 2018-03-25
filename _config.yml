@@ -23,9 +23,6 @@ navigation:
   - name: New & Polished!
     id: 4cb229a8-2e42-4618-b10f-15c342486538
     type: content
-  - name: High Holy Days
-    id: fa4f050f-f2a8-45b5-b31c-56ab2341f4e0
-    type: content
   - name: The Designer...
     id: 0966385e-f142-4409-a59c-368f26bc5eaa
     type: content
