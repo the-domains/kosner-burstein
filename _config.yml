@@ -65,10 +65,8 @@ purpose:
   - type: external
     url: 'http://db.kbf.am'
     label: Diane
-favicon: >-
-  https://the-grid-user-content.s3-us-west-2.amazonaws.com/3e44dc40-e662-4744-bb34-9d8f86f9abaa.png
-logo: >-
-  https://the-grid-user-content.s3-us-west-2.amazonaws.com/cbea1bf0-105b-4627-80b0-29013bb81aa8.png
+favicon: null
+logo: null
 github: true
 analytics:
   google: ''
